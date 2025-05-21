@@ -10,7 +10,7 @@
   import Index from "./pages/Index";
   import Search from "./pages/Search";
   import Library from "./pages/Library";
-  // import AlbumDetails from "./pages/AlbumDetails";
+  import AlbumDetails from "./pages/AlbumDetails";
   import NotFound from "./pages/NotFound";
   import Signup from "./pages/Signup";
   import Login from "./pages/Login";
@@ -38,12 +38,12 @@
             <Sonner />
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<LandingPage />} />
+{/*                 <Route path="/" element={<LandingPage />} /> */}
                 {/* Uncomment and edit these as needed */}
-                {/* <Route element={<PrivateRoute />}>
                   <Route path="/" element={<Index />} />
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/login" element={<Login />} />
+                <Route element={<PrivateRoute />}>
                   <Route path="/verify-email" element={<VerifyEmail />} />
                   <Route path="*" element={<NotFound />} />
                   <Route path="/landing" element={<LandingPage />} />
@@ -56,7 +56,7 @@
                   <Route path="/account" element={<AccountPage />} />
                   <Route path="/song/:id" element={<SongDetails />} />
                   <Route path="/watch/:id" element={<WatchDetails />} />
-                </Route> */}
+                </Route>
               </Routes>
             </BrowserRouter>
               <GlobalMusicPlayer />
